@@ -277,16 +277,18 @@ For every LinkedIn conversation with a new message in the last 7 days:
 
 | Area | Tools |
 |---|---|
-| Accounts | `linkedin_list_accounts` |
-| Conversations | `linkedin_list_conversations`, `linkedin_list_messages`, `linkedin_write_message_draft` |
-| Contacts | `linkedin_list_contacts`, `linkedin_import_contacts`, `linkedin_get_import_progress`, `linkedin_update_contact`, `linkedin_list_field_definitions`, `linkedin_create_field_definition` |
-| Companies | `linkedin_list_companies` |
-| Enrichment | `linkedin_enrich_profile`, `linkedin_find_email`, `linkedin_find_phone` |
-| Views | `linkedin_list_views`, `linkedin_create_view`, `linkedin_update_view` |
-| Templates & sequences | `linkedin_list_templates`, `linkedin_create_template`, `linkedin_update_template`, `linkedin_update_sequence`, `linkedin_delete_sequence` |
-| Reporting | `activity_list`, `activity_summary` |
+| Accounts | `list_accounts`, `get_credit_balance` |
+| Conversations | `list_conversations`, `list_messages`, `write_message_draft` |
+| Contacts | `list_contacts`, `import_contacts`, `get_import_progress`, `update_contact`, `list_field_definitions`, `create_field_definition`, `list_tags`, `update_tag`, `delete_tag` |
+| Companies | `list_companies` |
+| Enrichment | `enrich_profile`, `find_email`, `find_phone` |
+| Views | `list_views`, `create_view`, `update_view` |
+| Templates & sequences | `list_templates`, `create_template`, `update_template`, `update_sequence`, `delete_sequence` |
+| Reporting | `list_activity`, `get_activity_summary` |
+| Skills | `load_skill` |
+| Feedback | `send_feedback` |
 
-`linkedin_write_message_draft` saves a draft or stages a sequence for you to review. It never sends. Imports and enrichment use TalkToHumans credits.
+`write_message_draft` saves a draft or stages a sequence for you to review. It never sends. Imports and enrichment use TalkToHumans credits.
 
 ## FAQ
 
