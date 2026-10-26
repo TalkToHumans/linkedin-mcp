@@ -61,25 +61,27 @@ You need a TalkToHumans account on the Pro plan, with the TalkToHumans browser e
 
 ### Connect Claude to LinkedIn (web and desktop)
 
-1. In Claude, open **Customize > Connectors** (or **Settings > Connectors**).
-2. Click **Add custom connector**, name it `TalkToHumans` and paste `https://api.talktohumans.app/mcp`.
-3. Click **Connect** and sign in to TalkToHumans.
+1. In Claude, open **Customize > Connectors** and click **+ Add > Add custom connector**.
+2. Name it `TalkToHumans` and paste `https://api.talktohumans.app/mcp`.
+3. Click **Continue**, then **Add**, and sign in to TalkToHumans.
 
-Start a new chat and the LinkedIn tools appear in the tools menu. Setup takes about two minutes.
+In a chat, click **+ > Connectors** and turn TalkToHumans on. On Team and Enterprise plans, an owner adds it first in **Organization settings > Connectors**.
 
 ### Claude Code
 
 ```bash
-claude mcp add --transport http talktohumans https://api.talktohumans.app/mcp
+claude mcp add --transport http --scope user talktohumans https://api.talktohumans.app/mcp
 ```
 
-Then run `/mcp` inside Claude Code and follow the sign-in flow.
+Then run `/mcp` in Claude Code, pick `talktohumans` and sign in.
 
 ### Connect ChatGPT to LinkedIn
 
-1. In ChatGPT, go to **Settings > Apps > Create**.
+1. In ChatGPT, open **Plugins** in the sidebar and click **+ > Add custom MCP server**.
 2. Name it `TalkToHumans` and paste `https://api.talktohumans.app/mcp`.
-3. Click **Create** and complete the OAuth sign-in.
+3. Click **Create as a plugin** and sign in to TalkToHumans.
+
+In a chat, type `@TalkToHumans`. Custom MCP servers need a ChatGPT Business, Enterprise or Edu plan.
 
 ### Codex
 
@@ -90,7 +92,7 @@ codex mcp login talktohumans
 
 ### Cursor
 
-Add this to your Cursor MCP config, then complete the sign-in:
+Add this to `~/.cursor/mcp.json`. Cursor asks you to sign in the first time it uses it.
 
 ```json
 {
@@ -104,20 +106,13 @@ Add this to your Cursor MCP config, then complete the sign-in:
 
 ### VS Code
 
-```json
-{
-  "servers": {
-    "talktohumans": {
-      "type": "http",
-      "url": "https://api.talktohumans.app/mcp"
-    }
-  }
-}
-```
+Run **MCP: Add Server** from the Command Palette, choose **HTTP**, paste `https://api.talktohumans.app/mcp`, name it `talktohumans` and choose **Global**. VS Code asks you to sign in.
 
 ### n8n and other MCP clients
 
 Any client that supports remote MCP servers over Streamable HTTP with OAuth can use the same URL. The [MCP docs](https://www.talktohumans.app/docs/developers/mcp) have the steps for each client.
+
+Once connected, ask: "Use TalkToHumans to list my LinkedIn accounts."
 
 ### Prefer a CLI?
 
