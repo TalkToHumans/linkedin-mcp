@@ -119,6 +119,16 @@ Add this to your Cursor MCP config, then complete the sign-in:
 
 Any client that supports remote MCP servers over Streamable HTTP with OAuth can use the same URL. The [MCP docs](https://www.talktohumans.app/docs/developers/mcp) have the steps for each client.
 
+### Prefer a CLI?
+
+Running Claude Code, Codex or another terminal agent, or writing scripts and cron jobs? The [LinkedIn CLI](https://github.com/TalkToHumans/linkedin-cli) (`tth`) gives your agent the same workspace, safety rules and playbooks, without loading tool definitions into every session.
+
+```bash
+brew install talktohumans/tap/tth
+tth auth login
+tth skill --install
+```
+
 ## LinkedIn MCP use cases and prompts
 
 Replace the parts in `[brackets]`. Each prompt works in Claude, ChatGPT, Codex or Cursor once TalkToHumans is connected. They're ordered from the ones people run most.
@@ -312,13 +322,17 @@ No. TalkToHumans works through your logged-in browser session. Your AI client si
 
 Your workspace syncs while your browser is open with the TalkToHumans extension on, newest conversations first. Older message history loads when you open a conversation in TalkToHumans.
 
+### Is there a LinkedIn CLI?
+
+Yes. The [LinkedIn CLI](https://github.com/TalkToHumans/linkedin-cli) (`tth`) is the same workspace from the terminal, for Claude Code, Codex, scripts and cron jobs. It only drafts too. See the [CLI docs](https://www.talktohumans.app/docs/developers/cli).
+
 ### Is there a LinkedIn API too?
 
-Yes. The Pro plan also includes a REST API for contacts, companies, conversations, drafts, views and activity. See the [developer docs](https://www.talktohumans.app/docs/developers/mcp).
+Yes. The Pro plan also includes a REST API for contacts, companies, conversations, drafts, views and activity. See the [developer docs](https://www.talktohumans.app/docs/developers/overview).
 
 ### Which plan includes the MCP?
 
-MCP and API access come with the [Pro plan](https://www.talktohumans.app/pricing?utm_source=github&utm_medium=readme&utm_campaign=linkedin-mcp), alongside sequences, analytics and CRM integrations.
+MCP, CLI and API access come with the [Pro plan](https://www.talktohumans.app/pricing?utm_source=github&utm_medium=readme&utm_campaign=linkedin-mcp), alongside sequences, analytics and CRM integrations.
 
 ## About this repository
 
