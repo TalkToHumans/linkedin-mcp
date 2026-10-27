@@ -284,7 +284,7 @@ For every LinkedIn conversation with a new message in the last 7 days:
 |---|---|
 | Accounts | `list_accounts`, `get_credit_balance` |
 | Conversations | `list_conversations`, `list_messages`, `write_message_draft` |
-| Contacts | `list_contacts`, `import_contacts`, `get_import_progress`, `update_contact`, `list_field_definitions`, `create_field_definition`, `list_tags`, `update_tag`, `delete_tag` |
+| Contacts | `list_contacts`, `import_contacts`, `get_import_progress`, `update_contact`, `delete_contacts`, `list_field_definitions`, `create_field_definition`, `list_tags`, `update_tag`, `delete_tag` |
 | Companies | `list_companies` |
 | Enrichment | `enrich_profile`, `find_email`, `find_phone` |
 | Views | `list_views`, `create_view`, `update_view` |
