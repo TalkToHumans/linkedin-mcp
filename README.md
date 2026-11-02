@@ -36,6 +36,7 @@ No LinkedIn tool is completely risk-free. Here is how TalkToHumans keeps the ris
 
 - **Human pace, enforced.** Every action type has its own conservative daily limit and a slightly random gap between actions, so nothing goes out in bursts. Limits belong to the LinkedIn account, so every teammate and every agent shares them. Nobody can raise them, not even your agent.
 - **Cache-based sync.** Your agent reads a synced copy of your LinkedIn data, not LinkedIn itself. Ask it 100 questions about your inbox and your account sees the same activity as one, with no hopping from profile to profile. The background sync that fills that copy is paced the same way.
+- **Posts and searches skip your account.** Posts, comments, the people engaging with them and people searches come from a data provider, never from your LinkedIn session.
 - **Runs in your browser.** LinkedIn actions go through the browser you already use. No cloud automation, no proxy IPs and no virtual browsers acting on your behalf.
 - **Work in the chat, the app or LinkedIn.** Everything your agent does also lands in the TalkToHumans app and in panels embedded in LinkedIn's own pages. Check conversations, see what's scheduled and take over by hand wherever you are.
 - **Drafts only.** The MCP can write a reply or stage a full follow-up sequence. Nothing goes out until you hit send.
@@ -49,7 +50,8 @@ Founders, consultants, sales teams and agencies use it for the same handful of j
 - **[Draft messages in your voice.](#draft-linkedin-messages-in-your-voice)** Your agent researches each person and writes a first message that sounds like you. You review every draft and send it yourself.
 - **[See what gets replies.](#analyze-your-linkedin-outbound-performance)** Analyze acceptance rates, reply rates and templates, from connection request to booked meeting.
 - **[Stage follow-up sequences.](#stage-linkedin-follow-up-sequences)** Follow-ups that stop when the lead replies, written for each person, waiting for you to launch them.
-- **[Import new leads.](#find-new-leads-online-and-import-them)** Find people showing intent online, or bring in a list from an event or Sales Navigator, and get a ready-to-work view.
+- **[Import new leads.](#find-new-leads-online-and-import-them)** Search LinkedIn by role, company or location, or bring in a list from an event or Sales Navigator, and get a ready-to-work view.
+- **[Mine post comments.](#find-leads-in-the-comments-of-linkedin-posts)** Find posts on a topic or by a competitor, and import the people who commented or reacted, each with a signal saying how.
 - **[Score and tag contacts.](#score-contacts-against-your-icp)** Fill an ICP score for every contact, or backfill tags on hundreds of conversations the way your team already uses them.
 - **[Keep your CRM in sync.](#log-linkedin-conversations-in-your-crm)** Combine it with your CRM's MCP to log LinkedIn conversations, or use the native HubSpot integration.
 
@@ -57,7 +59,7 @@ Your agent also gets work email and mobile phone for the people you talk to, fro
 
 ## Connect your AI client to LinkedIn
 
-You need a TalkToHumans account on the Pro plan, with the TalkToHumans browser extension connected to LinkedIn. [Try it free](https://app.talktohumans.app/?auth=signup&utm_source=github&utm_medium=readme&utm_campaign=linkedin-mcp).
+You need a TalkToHumans account on the Starter or Pro plan, with the TalkToHumans browser extension connected to LinkedIn. [Try it free](https://app.talktohumans.app/?auth=signup&utm_source=github&utm_medium=readme&utm_campaign=linkedin-mcp).
 
 ### Connect Claude to LinkedIn (web and desktop)
 
@@ -205,22 +207,33 @@ I'll review and launch each sequence myself.
 
 ### Find new leads online and import them
 
-Pair TalkToHumans with a web search MCP such as [Parallel](https://parallel.ai) to find fresh leads every day.
+Your agent searches LinkedIn by job title, company, location or industry, 25 people a page, and imports the ones worth it. Each page uses 10 credits.
 
 ```txt
-Use Parallel Search MCP to find 20 high-quality leads I should reach out to today
-for [BUSINESS NAME].
+Use TalkToHumans MCP to find people on LinkedIn who match my ICP:
+[DESCRIBE YOUR ICP: ROLE, COMPANY SIZE, INDUSTRY, LOCATION]
 
-My ICP is: [DESCRIBE YOUR ICP]
-
-Prioritize people who recently showed direct or indirect buying intent online:
-engaging with relevant topics, discussing a problem we solve, or interacting with competitors.
-
-Then:
-1. Remove duplicates and anyone already in TalkToHumans.
-2. Import the new leads with TalkToHumans MCP.
-3. Create a view for them so I can start working through them.
+Show me the 20 best fits and why, before importing anything.
+Once I confirm, import them, skip anyone already in TalkToHumans,
+and create a view for them so I can start working through them.
 ```
+
+### Find leads in the comments of LinkedIn posts
+
+People who comment on a post about your problem space are telling you what they care about. Your agent finds those posts and imports the people who commented or reacted. Importing engagers needs the Pro plan.
+
+```txt
+Use TalkToHumans MCP to find LinkedIn posts from the last month about [TOPIC],
+or that mention [COMPETITOR].
+
+Show me the 5 with the most comments. Import the ones I pick,
+tell me how many credits importing their engagers would cost, and wait for my OK.
+
+Then import the engagers and list the commenters whose headline matches my ICP:
+[DESCRIBE YOUR ICP]
+```
+
+To watch a competitor's or an influencer's posts every day, ask your agent to track their content. It keeps using credits until you stop it, so your agent asks you first.
 
 ### Import a LinkedIn lead list you already have
 
@@ -230,7 +243,7 @@ Got a list from an event, a webinar, a Sales Navigator search or another tool? Y
 Use TalkToHumans MCP to import the people from this list:
 [PASTE LINKEDIN PROFILE URLS, OR ATTACH A CSV WITH A LINKEDIN URL COLUMN]
 
-Skip anyone already in TalkToHumans, tag them "[TAG NAME]", and create a view for them.
+Skip anyone already in TalkToHumans, add a signal saying where they come from, and create a view for them.
 Then draft a first message for each one that mentions [WHERE THEY COME FROM, E.G. THE EVENT].
 ```
 
@@ -284,8 +297,9 @@ For every LinkedIn conversation with a new message in the last 7 days:
 |---|---|
 | Accounts | `list_accounts`, `get_credit_balance` |
 | Conversations | `list_conversations`, `list_messages`, `write_message_draft` |
-| Contacts | `list_contacts`, `import_contacts`, `get_import_progress`, `update_contact`, `delete_contacts`, `list_field_definitions`, `create_field_definition`, `list_tags`, `update_tag`, `delete_tag` |
+| Contacts | `list_contacts`, `search_people`, `import_contacts`, `get_import_progress`, `update_contact`, `delete_contacts`, `list_field_definitions`, `create_field_definition`, `list_tags`, `update_tag`, `delete_tag`, `create_signals` |
 | Companies | `list_companies` |
+| Content | `list_content`, `search_posts`, `find_content`, `import_content`, `import_content_engagers`, `track_content`, `update_content` |
 | Enrichment | `enrich_profile`, `find_email`, `find_phone` |
 | Views | `list_views`, `create_view`, `update_view` |
 | Templates & sequences | `list_templates`, `create_template`, `update_template`, `update_sequence`, `delete_sequence` |
@@ -293,7 +307,7 @@ For every LinkedIn conversation with a new message in the last 7 days:
 | Skills | `load_skill` |
 | Feedback | `send_feedback` |
 
-`write_message_draft` saves a draft or stages a sequence for you to review. It never sends. Imports and enrichment use TalkToHumans credits.
+`write_message_draft` saves a draft or stages a sequence for you to review. It never sends. Imports, searches, enrichment and tracking use TalkToHumans credits.
 
 ## FAQ
 
@@ -323,11 +337,11 @@ Yes. The [LinkedIn CLI](https://github.com/TalkToHumans/linkedin-cli) (`tth`) is
 
 ### Is there a LinkedIn API too?
 
-Yes. The Pro plan also includes a REST API for contacts, companies, conversations, drafts, views and activity. See the [developer docs](https://www.talktohumans.app/docs/developers/overview).
+Yes. Every paid plan also includes a REST API for contacts, companies, conversations, content, drafts, views and activity. See the [developer docs](https://www.talktohumans.app/docs/developers/overview).
 
 ### Which plan includes the MCP?
 
-MCP, CLI and API access come with the [Pro plan](https://www.talktohumans.app/pricing?utm_source=github&utm_medium=readme&utm_campaign=linkedin-mcp), alongside sequences, analytics and CRM integrations.
+MCP, CLI and API access come with every paid plan, from [Starter](https://www.talktohumans.app/pricing?utm_source=github&utm_medium=readme&utm_campaign=linkedin-mcp). Pro adds sequences, post engagers, analytics and CRM integrations.
 
 ## About this repository
 
