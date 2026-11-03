@@ -332,7 +332,7 @@ For every LinkedIn conversation with a new message in the last 7 days:
 | Skills | `load_skill` |
 | Feedback | `send_feedback` |
 
-`write_message_draft` saves a draft or stages a sequence for you to review. It never sends. Imports, searches, enrichment and tracking use TalkToHumans credits.
+`write_message_draft` saves a draft, a sequence or a connection request for you to review, or clears one. It never sends. Imports, searches, enrichment and tracking use TalkToHumans credits.
 
 ## FAQ
 
