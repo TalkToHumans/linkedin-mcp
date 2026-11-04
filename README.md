@@ -43,17 +43,17 @@ No LinkedIn tool is completely risk-free. Here is how TalkToHumans keeps the ris
 
 ## What your agent can do on LinkedIn
 
-Founders, consultants, sales teams and agencies use it for the same handful of jobs. Each one has a ready-to-paste prompt [further down](#linkedin-mcp-use-cases-and-prompts).
+Founders, consultants, sales teams and agencies use it for the same handful of jobs:
 
-- **[Find leads in your network.](#find-leads-in-your-linkedin-network)** Describe your ideal customer, and your agent scores your connections. They're already connected to you, so you can message them today.
-- **[Find the replies you owe.](#find-the-linkedin-replies-you-owe)** Scan hundreds of LinkedIn, Sales Navigator and Recruiter threads for the ones where someone is waiting on you, every morning if you like.
-- **[Draft messages in your voice.](#draft-linkedin-messages-in-your-voice)** Your agent researches each person and writes a first message that sounds like you. You review every draft and send it yourself.
-- **[See what gets replies.](#analyze-your-linkedin-outbound-performance)** Analyze acceptance rates, reply rates and templates, from connection request to booked meeting.
-- **[Stage follow-up sequences.](#stage-linkedin-follow-up-sequences)** Follow-ups that stop when the lead replies, written for each person, waiting for you to launch them.
-- **[Import new leads.](#find-new-leads-online-and-import-them)** Search LinkedIn by role, company or location, or bring in a list from an event or Sales Navigator, and get a ready-to-work view.
-- **[Mine post comments.](#find-leads-in-the-comments-of-linkedin-posts)** Find posts on a topic or by a competitor, and import the people who commented or reacted, each with a signal saying how.
-- **[Score and tag contacts.](#score-contacts-against-your-icp)** Fill an ICP score for every contact, or backfill tags on hundreds of conversations the way your team already uses them.
-- **[Keep your CRM in sync.](#log-linkedin-conversations-in-your-crm)** Combine it with your CRM's MCP to log LinkedIn conversations, or use the native HubSpot integration.
+- **Find leads in your network.** Describe your ideal customer, and your agent scores your connections. They're already connected to you, so you can message them today.
+- **Find the replies you owe.** Scan hundreds of LinkedIn, Sales Navigator and Recruiter threads for the ones where someone is waiting on you, every morning if you like.
+- **Draft messages in your voice.** Your agent researches each person and writes a first message that sounds like you. You review every draft and send it yourself.
+- **See what gets replies.** Analyze acceptance rates, reply rates and templates, from connection request to booked meeting.
+- **Stage follow-up sequences.** Follow-ups that stop when the lead replies, written for each person, waiting for you to launch them.
+- **Import new leads.** Search LinkedIn by role, company or location, or bring in a list from an event or Sales Navigator, and get a ready-to-work view.
+- **Mine post comments.** Find posts on a topic or by a competitor, and import the people who commented or reacted, each with a signal saying how.
+- **Score and tag contacts.** Fill an ICP score for every contact, or backfill tags on hundreds of conversations the way your team already uses them.
+- **Keep your CRM in sync.** Combine it with your CRM's MCP to log LinkedIn conversations, or use the native HubSpot integration.
 
 Your agent also gets work email and mobile phone for the people you talk to, from 20+ providers in a waterfall.
 
@@ -61,45 +61,83 @@ Your agent also gets work email and mobile phone for the people you talk to, fro
 
 You need a TalkToHumans account on any paid plan, from Starter, with the TalkToHumans browser extension connected to LinkedIn. [Try it free](https://app.talktohumans.app/?auth=signup&utm_source=github&utm_medium=readme&utm_campaign=linkedin-mcp): new accounts start with a 7-day Pro trial.
 
-[![Add to Claude](https://img.shields.io/badge/Claude-Add_connector-D97757?logo=claude&logoColor=white)](https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=TalkToHumans&connectorUrl=https%3A%2F%2Fapi.talktohumans.app%2Fmcp)
-[![Install in Cursor](https://img.shields.io/badge/Cursor-Install_server-000000?logo=cursor&logoColor=white)](https://cursor.com/install-mcp?name=TalkToHumans&config=eyJ1cmwiOiJodHRwczovL2FwaS50YWxrdG9odW1hbnMuYXBwL21jcCJ9)
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_server-0098FF?logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=talktohumans&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapi.talktohumans.app%2Fmcp%22%7D)
+Prefer a CLI? You can also use the [LinkedIn CLI](https://github.com/TalkToHumans/linkedin-cli) instead.
 
-### Connect Claude to LinkedIn (web, desktop and mobile)
+### Claude
 
-**[Add TalkToHumans to Claude](https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=TalkToHumans&connectorUrl=https%3A%2F%2Fapi.talktohumans.app%2Fmcp)**: the link opens Claude with TalkToHumans prefilled. Click **Add**, then **Connect**, and sign in to TalkToHumans. Open it on a computer; it then works on your phone too.
+[**Click this link to add TalkToHumans to Claude**](https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=TalkToHumans&connectorUrl=https%3A%2F%2Fapi.talktohumans.app%2Fmcp)
 
-On Team and Enterprise plans, only an owner can add it: [add it as an owner](https://claude.ai/admin-settings/connectors?modal=add-custom-connector&connectorName=TalkToHumans&connectorUrl=https%3A%2F%2Fapi.talktohumans.app%2Fmcp). Not showing in a chat? Click **+ > Connectors** and turn TalkToHumans on.
+Click **Add**, then **Connect**, and sign in to TalkToHumans.
 
-By hand: open **Customize > Connectors**, click **+ Add > Add custom connector**, name it `TalkToHumans`, paste `https://api.talktohumans.app/mcp`, click **Add**, then **Connect**.
+_On Team and Enterprise plans, only an owner can add it: [add it as an owner](https://claude.ai/admin-settings/connectors?modal=add-custom-connector&connectorName=TalkToHumans&connectorUrl=https%3A%2F%2Fapi.talktohumans.app%2Fmcp)._
 
-### Connect ChatGPT to LinkedIn
+_Members then click **Connect** in **Customize** > **Connectors**._
 
-1. Open [ChatGPT plugins](https://chatgpt.com/plugins), click **+** and choose **Add custom MCP server**.
-2. Name it `TalkToHumans` and paste `https://api.talktohumans.app/mcp`.
-3. Choose **OAuth**, click **Create**, then sign in to TalkToHumans.
+_Not showing in a chat? Click **+** > **Connectors** and turn TalkToHumans on._
 
-In a chat, type `@TalkToHumans`. Custom MCP servers depend on your ChatGPT plan. On Business, Enterprise and Edu, an admin may need to allow them.
+<details>
+<summary>Add it by hand</summary>
+
+1. Open **Customize** > **Connectors**, click **+ Add** > **Add custom connector**
+2. Name it "TalkToHumans" and paste the URL:
+
+```text
+https://api.talktohumans.app/mcp
+```
+
+3. Click **Add**, then **Connect**, and sign in to TalkToHumans
+
+</details>
+
+### ChatGPT
+
+1. Open [ChatGPT plugins](https://chatgpt.com/plugins), click **+** and choose **Add custom MCP server**
+2. Name it "TalkToHumans" and paste the URL:
+
+```text
+https://api.talktohumans.app/mcp
+```
+
+3. Choose **OAuth**, click **Create**, then sign in to TalkToHumans
+
+_Custom MCP servers depend on your ChatGPT plan. On Business, Enterprise and Edu, an admin may need to allow them._
 
 ### Claude Code
+
+In a terminal, run:
 
 ```bash
 claude mcp add --transport http --scope user talktohumans https://api.talktohumans.app/mcp
 ```
 
-Then run `/mcp` in Claude Code, pick `talktohumans` and choose **Authenticate**. Already connected Claude? It shows up in Claude Code with the same account.
+Then run `/mcp` in Claude Code, pick `talktohumans` and choose **Authenticate**.
+
+Already connected Claude? It shows up in Claude Code with the same account.
 
 ### Codex
+
+In a terminal, run:
 
 ```bash
 codex mcp add talktohumans --url https://api.talktohumans.app/mcp
 ```
 
-If no browser opened to sign in, run `codex mcp login talktohumans`. In the ChatGPT desktop app, add it in **Settings > MCP servers**.
+If no browser opened to sign in, run:
+
+```bash
+codex mcp login talktohumans
+```
+
+The Codex app and IDE extension share this setup. In the ChatGPT desktop app, add it in **Settings** > **MCP servers**.
 
 ### Cursor
 
-**[Install in Cursor](https://cursor.com/install-mcp?name=TalkToHumans&config=eyJ1cmwiOiJodHRwczovL2FwaS50YWxrdG9odW1hbnMuYXBwL21jcCJ9)**, or add this to `~/.cursor/mcp.json`. Cursor asks you to sign in the first time it uses it.
+[**Click this link to add TalkToHumans to Cursor**](https://cursor.com/install-mcp?name=TalkToHumans&config=eyJ1cmwiOiJodHRwczovL2FwaS50YWxrdG9odW1hbnMuYXBwL21jcCJ9)
+
+<details>
+<summary>Add it by hand</summary>
+
+Add this to `~/.cursor/mcp.json`:
 
 ```json
 {
@@ -111,209 +149,73 @@ If no browser opened to sign in, run `codex mcp login talktohumans`. In the Chat
 }
 ```
 
+</details>
+
 ### VS Code
 
-**[Install in VS Code](https://vscode.dev/redirect/mcp/install?name=talktohumans&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapi.talktohumans.app%2Fmcp%22%7D)**, or run **MCP: Add Server** from the Command Palette, choose **HTTP**, paste `https://api.talktohumans.app/mcp`, name it `talktohumans` and choose **Global**. VS Code asks you to sign in.
+[**Click this link to add TalkToHumans to VS Code**](https://vscode.dev/redirect/mcp/install?name=talktohumans&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fapi.talktohumans.app%2Fmcp%22%7D)
 
-### Gemini CLI, Grok, Perplexity, Le Chat, n8n and other MCP clients
+<details>
+<summary>Add it by hand</summary>
 
-Any client that supports remote MCP servers over Streamable HTTP with OAuth can use the same URL. For Gemini CLI:
+1. Open the Command Palette and run **MCP: Add Server**
+2. Choose **HTTP** and paste the URL:
+
+```text
+https://api.talktohumans.app/mcp
+```
+
+3. Name it `talktohumans`, choose **Global**, and sign in when VS Code asks
+
+</details>
+
+### Gemini CLI
+
+In a terminal, run:
 
 ```bash
 gemini mcp add --transport http talktohumans https://api.talktohumans.app/mcp
 ```
 
-Then run `/mcp auth talktohumans`. The [MCP docs](https://www.talktohumans.app/docs/developers/mcp) have the steps for Grok, Perplexity, Le Chat and the rest.
+Then run `/mcp auth talktohumans` in Gemini CLI.
 
-### Run your first prompt
+### Grok
 
-Once connected, paste this in your AI client:
+1. On [grok.com](https://grok.com), open **Connectors**, then **New Connector** > **Custom**
+2. Paste the URL, then sign in to TalkToHumans:
 
-```txt
-I just connected LinkedIn to you, through TalkToHumans.
-
-Using what you know about me here, and my LinkedIn data, tell me what would be the highest impact action for me right now, and how you could help me with it using TalkToHumans
-
-Keep it short for now, visuals / graphs > words
-
-At the end, tell me what TalkToHumans can do to help me
+```text
+https://api.talktohumans.app/mcp
 ```
 
-Just checking the connection? Ask: "Use TalkToHumans to list my LinkedIn accounts."
+### Perplexity
 
-### Prefer a CLI?
+1. On [Perplexity](https://www.perplexity.ai), open **Connectors**, then **Add custom** > **Remote MCP**
+2. Paste the URL, choose **OAuth** and **Streamable HTTP**:
 
-Running Claude Code, Codex or another terminal agent, or writing scripts and cron jobs? The [LinkedIn CLI](https://github.com/TalkToHumans/linkedin-cli) (`tth`) gives your agent the same workspace, safety rules and playbooks, without loading tool definitions into every session.
-
-```bash
-brew install talktohumans/tap/tth
-tth auth login
-tth skill --install
+```text
+https://api.talktohumans.app/mcp
 ```
 
-## LinkedIn MCP use cases and prompts
+3. Sign in to TalkToHumans
 
-Replace the parts in `[brackets]`. Each prompt works in Claude, ChatGPT, Codex or Cursor once TalkToHumans is connected. They're ordered from the ones people run most.
+Custom connectors need Perplexity Pro, Max or Enterprise.
 
-### Find leads in your LinkedIn network
+### Le Chat
 
-At least 10–20 people in your network probably already fit your ICP, and you can message them without a connection request.
+1. In [Le Chat connections](https://chat.mistral.ai/connections), click **Add connector**, then **Custom MCP**
+2. Paste the URL, then sign in to TalkToHumans:
 
-```txt
-Use TalkToHumans MCP to find up to 20 leads in my LinkedIn network
-I should reach out to today for [BUSINESS NAME].
-
-My ICP is: [DESCRIBE YOUR ICP]
-
-Then create a view in TalkToHumans with those 20 leads so I can work through them today.
+```text
+https://api.talktohumans.app/mcp
 ```
 
-To find intro paths instead, ask for people who could introduce you to your ICP, why each one is relevant, and a draft of the intro ask.
+### Other
 
-### Find the LinkedIn replies you owe
+Add a custom MCP server (Streamable HTTP, OAuth) with this URL, then sign in:
 
-Leads rarely go cold because they said no. They go cold because nobody answered.
-
-```txt
-Use TalkToHumans MCP to go through my LinkedIn conversations.
-List every thread where the other person wrote last and I haven't answered,
-most important first. Draft a reply for each one. Don't send anything.
-```
-
-Save it as a scheduled task in your AI client for a LinkedIn inbox brief every morning. Your agent reads the inbox synced by the TalkToHumans extension, so keep LinkedIn open in your browser for the latest messages.
-
-### Draft LinkedIn messages in your voice
-
-A good first message is the hardest part. Your agent gets you past the blank page, and every draft waits in TalkToHumans until you review and send it.
-
-```txt
-Use TalkToHumans MCP and open the contacts in this view:
-[LINK TO THE CONTACT VIEW IN TALKTOHUMANS]
-
-Draft a first message for each of them.
-
-Rules:
-- Max 3 sentences.
-- No pitch in the first message. Open a real conversation.
-- Use their profile or our past conversation to show you know something
-  true and specific about their world. No fake flattery.
-- Match their tone, based on how they write or how their profile reads.
-- Ask yourself: "Would I reply to this if I were them?" If not, rewrite it.
-- Review your output with https://github.com/hardikpandya/stop-slop/blob/main/SKILL.md
-
-I'll review each message before sending.
-```
-
-### Analyze your LinkedIn outbound performance
-
-```txt
-Use TalkToHumans MCP to analyze my LinkedIn outbound performance over the past 2 weeks.
-Work out what tends to work and what doesn't, from accepted connection request
-to booked meeting. Then tell me what to change, improve or stop doing for the next 2 weeks.
-
-Add charts where they make the analysis easier to read.
-```
-
-### Stage LinkedIn follow-up sequences
-
-Most replies come from the follow-up, and writing three of them for every lead is where most people give up. Your agent stages each [sequence](https://www.talktohumans.app/docs/product/messaging/sequences) as a draft. It stops as soon as the lead replies, and nothing starts until you launch it.
-
-```txt
-Use TalkToHumans MCP to find the contacts who accepted my connection request
-in the last 30 days but never replied.
-
-For each one, stage a 2-step follow-up sequence as a draft:
-- Day 3: a short follow-up that adds one useful, specific thing for them
-- Day 10: a light last nudge
-
-Same rules as a first message: short, no pitch, specific to them.
-I'll review and launch each sequence myself.
-```
-
-### Find new leads online and import them
-
-Your agent searches LinkedIn by job title, company, location or industry, 25 people a page, and imports the ones worth it. Each page uses 10 credits.
-
-```txt
-Use TalkToHumans MCP to find people on LinkedIn who match my ICP:
-[DESCRIBE YOUR ICP: ROLE, COMPANY SIZE, INDUSTRY, LOCATION]
-
-Show me the 20 best fits and why, before importing anything.
-Once I confirm, import them, skip anyone already in TalkToHumans,
-and create a view for them so I can start working through them.
-```
-
-### Find leads in the comments of LinkedIn posts
-
-People who comment on a post about your problem space are telling you what they care about. Your agent finds those posts and imports the people who commented or reacted. Importing engagers needs the Pro plan.
-
-```txt
-Use TalkToHumans MCP to find LinkedIn posts from the last month about [TOPIC],
-or that mention [COMPETITOR].
-
-Show me the 5 with the most comments. Import the ones I pick,
-tell me how many credits importing their engagers would cost, and wait for my OK.
-
-Then import the engagers and list the commenters whose headline matches my ICP:
-[DESCRIBE YOUR ICP]
-```
-
-To watch a competitor's or an influencer's posts every day, ask your agent to track their content. It keeps using credits until you stop it, so your agent asks you first.
-
-### Import a LinkedIn lead list you already have
-
-Got a list from an event, a webinar, a Sales Navigator search or another tool? Your agent imports up to 500 LinkedIn profiles at a time.
-
-```txt
-Use TalkToHumans MCP to import the people from this list:
-[PASTE LINKEDIN PROFILE URLS, OR ATTACH A CSV WITH A LINKEDIN URL COLUMN]
-
-Skip anyone already in TalkToHumans, add a signal saying where they come from, and create a view for them.
-Then draft a first message for each one that mentions [WHERE THEY COME FROM, E.G. THE EVENT].
-```
-
-### Score contacts against your ICP
-
-Your agent stores the score in an "ICP score" [custom field](https://www.talktohumans.app/docs/product/contacts/custom-fields), so you can sort and filter your contacts by it.
-
-```txt
-Use TalkToHumans MCP and open the contacts in this view:
-[LINK TO THE CONTACT VIEW IN TALKTOHUMANS]
-
-If a contact custom field named "ICP score" doesn't exist yet, create it.
-Then analyze each contact one by one and fill in their ICP score.
-
-Our ICP is: [DESCRIBE YOUR ICP]
-
-Use web search and their company website to be more accurate.
-```
-
-### Tag LinkedIn contacts and conversations automatically
-
-Tags work well when you're working through new conversations. To backfill hundreds of old ones, hand it to your agent. Keep tags few and simple, like "Hot lead", "Friend", "Candidate", "Investor" or "Spam": a contact with no tag is better than a wrong one.
-
-```txt
-Use TalkToHumans MCP. First, look at our existing tags and how we use them.
-Then tag every lead that has no tags, using those existing tags,
-based on our conversations and what you know about the contact and their company.
-
-Rules:
-- Reuse existing tags. Only create a new one if none fits, and keep the list short.
-- Tags are 1-2 words in plain English, like "Hot lead", "Friend", "Candidate", "Investor", "Spam".
-- One tag per contact is usually enough.
-- If you're unsure, don't tag the contact.
-```
-
-### Log LinkedIn conversations in your CRM
-
-Using HubSpot? The [native integration](https://www.talktohumans.app/docs/hubspot) on the Pro plan already syncs it. For any other CRM with an MCP server, such as Attio or Twenty, your agent can do it:
-
-```txt
-Use TalkToHumans MCP and my CRM's MCP.
-For every LinkedIn conversation with a new message in the last 7 days:
-1. Find the matching person in my CRM, or create them if they're missing.
-2. Add a two-line summary of the conversation as a note.
-3. If their work email is missing in my CRM, find it with TalkToHumans MCP.
+```text
+https://api.talktohumans.app/mcp
 ```
 
 ## LinkedIn MCP tools
