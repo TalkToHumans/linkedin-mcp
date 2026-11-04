@@ -59,10 +59,6 @@ Your agent also gets work email and mobile phone for the people you talk to, fro
 
 ## Connect your AI client to LinkedIn
 
-You need a TalkToHumans account on any paid plan, from Starter, with the TalkToHumans browser extension connected to LinkedIn. [Try it free](https://app.talktohumans.app/?auth=signup&utm_source=github&utm_medium=readme&utm_campaign=linkedin-mcp): new accounts start with a 7-day Pro trial.
-
-Prefer a CLI? You can also use the [LinkedIn CLI](https://github.com/TalkToHumans/linkedin-cli) instead.
-
 ### Claude
 
 [**Click this link to add TalkToHumans to Claude**](https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=TalkToHumans&connectorUrl=https%3A%2F%2Fapi.talktohumans.app%2Fmcp)
