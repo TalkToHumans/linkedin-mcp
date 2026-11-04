@@ -230,7 +230,7 @@ https://api.talktohumans.app/mcp
 | Skills | `load_skill` |
 | Feedback | `send_feedback` |
 
-`write_message_draft` saves a draft, a sequence or a connection request for you to review, or clears one. It never sends. Imports, searches, enrichment and tracking use TalkToHumans credits.
+`write_message_draft` saves a draft, a sequence or a connection request for you to review, or clears one. It never sends. Imports, searches, enrichment and tracking use TalkToHumans credits. `list_accounts` also gives your agent your own LinkedIn profile, for free, so it knows who you are.
 
 ## FAQ
 
