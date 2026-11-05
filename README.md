@@ -219,7 +219,7 @@ https://api.talktohumans.app/mcp
 | Area | Tools |
 |---|---|
 | Accounts | `list_accounts`, `get_credit_balance` |
-| Conversations | `list_conversations`, `list_messages`, `write_message_draft` |
+| Conversations | `list_conversations`, `list_messages`, `write_message_draft`, `upload_file` |
 | Contacts | `list_contacts`, `search_people`, `import_contacts`, `get_import_progress`, `update_contact`, `delete_contacts`, `list_field_definitions`, `create_field_definition`, `list_tags`, `update_tag`, `delete_tag`, `create_signals` |
 | Companies | `list_companies` |
 | Content | `list_content`, `search_posts`, `find_content`, `import_content`, `import_content_engagers`, `track_content`, `update_content` |
