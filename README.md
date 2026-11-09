@@ -224,7 +224,7 @@ https://api.talktohumans.app/mcp
 | Companies | `list_companies` |
 | Content | `list_content`, `search_posts`, `find_content`, `import_content`, `import_content_engagers`, `track_content`, `update_content` |
 | Enrichment | `enrich_profile`, `find_email`, `find_phone` |
-| Views | `list_views`, `create_view`, `update_view` |
+| Views | `list_views`, `create_view`, `update_view`, `delete_view` |
 | Templates & sequences | `list_templates`, `create_template`, `update_template`, `update_sequence`, `delete_sequence` |
 | Reporting | `list_activity`, `get_activity_summary` |
 | Skills | `load_skill` |
