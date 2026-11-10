@@ -15,6 +15,7 @@ Your agent reads your LinkedIn conversations, searches your network, enriches pr
 [![smithery badge](https://smithery.ai/badge/talktohumans/linkedin-mcp)](https://smithery.ai/servers/talktohumans/linkedin-mcp)
 
 [![LinkedIn MCP (by TalkToHumans) MCP connector – tool definition quality and endpoint health on Glama](https://glama.ai/mcp/connectors/io.github.TalkToHumans/linkedin-mcp/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.TalkToHumans/linkedin-mcp)
+[![M8ven Score](https://m8ven.ai/badge/mcp/coolsapiens-linkedin-mcp-h5hxkm?v=2305abce2be77fc7cb7031625c4c95ad)](https://m8ven.ai/mcp/coolsapiens-linkedin-mcp-h5hxkm?s=readme)
 
 ```txt
 https://api.talktohumans.app/mcp
