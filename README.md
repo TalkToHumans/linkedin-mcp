@@ -44,17 +44,20 @@ No LinkedIn tool is completely risk-free. Here is how TalkToHumans keeps the ris
 
 ## What your agent can do on LinkedIn
 
-Founders, consultants, sales teams and agencies use it for the same handful of jobs:
+Founders, consultants, sales teams and agencies use it for these jobs, most common first:
 
-- **Find leads in your network.** Describe your ideal customer, and your agent scores your connections. They're already connected to you, so you can message them today.
-- **Find the replies you owe.** Scan hundreds of LinkedIn, Sales Navigator and Recruiter threads for the ones where someone is waiting on you, every morning if you like.
-- **Draft messages in your voice.** Your agent researches each person and writes a first message that sounds like you. You review every draft and send it yourself.
-- **See what gets replies.** Analyze acceptance rates, reply rates and templates, from connection request to booked meeting.
-- **Stage follow-up sequences.** Follow-ups that stop when the lead replies, written for each person, waiting for you to launch them.
-- **Find new leads, warmest first.** Your agent starts with the people you already talk to and those who engaged with you, then checks the news and posts on your topic, and only then searches LinkedIn by role, company or location. Or bring in a list from an event or Sales Navigator, and get a ready-to-work view.
-- **Mine post comments.** Find posts on a topic or by a competitor, and import the people who commented or reacted, each with a signal saying how.
-- **Score and tag contacts.** Fill an ICP score for every contact, or backfill tags on hundreds of conversations the way your team already uses them.
-- **Keep your CRM in sync.** Combine it with your CRM's MCP to match contacts by LinkedIn URL and log LinkedIn conversations, or use the native HubSpot integration.
+- **Fresh leads, ready to contact.** Your agent works out who you sell to, finds new leads warmest first (people who engaged with you, posts on your topic, then a LinkedIn search by role, company or location), scores them on your ICP and stages a sequence in your voice for each. You review and launch them from one view.
+- **Find deals buried in your inbox.** Scan hundreds of LinkedIn, Sales Navigator and Recruiter threads for the ones where someone is waiting on you, or showed interest and went quiet, every morning if you like.
+- **Follow up on silent accepts.** Follow-ups for people who accepted but never replied, written for each person. They stop when the lead replies, and wait for you to launch them.
+- **Log chats in your CRM.** Combine it with your CRM's MCP to match contacts by LinkedIn URL and log LinkedIn conversations, or use the native HubSpot integration.
+- **Import a lead list.** Bring in a list from an event, a webinar or Sales Navigator, up to 500 profiles at a time, and get a ready-to-work view with first messages drafted.
+- **Leads already in your network.** Describe your ideal customer, and your agent scores your connections. They're already connected to you, so you can message them today.
+- **Coffees on your next trip.** See the people in the city you're visiting on a map, and get coffee invites drafted, to network or sell.
+- **Leads from post comments.** Find posts on a topic or by a competitor, and import the people who commented or reacted, each with a signal saying how.
+- **Organize your inbox.** Set up tags and inboxes that fit your business, then tag hundreds of contacts the way your team already works.
+- **What works in your outbound.** Analyze acceptance rates, reply rates and templates, from connection request to booked meeting, and what to change next.
+- **Score leads by ICP.** Fill an ICP score for every contact, so you can sort them by best fit.
+- **Find your quick wins.** Ask what you can do today, with little effort, that pays off.
 
 Your agent also gets work email and mobile phone for the people you talk to, from 20+ providers in a waterfall.
 
