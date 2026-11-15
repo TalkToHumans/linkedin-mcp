@@ -54,7 +54,7 @@ Founders, consultants, sales teams and agencies use it for the same handful of j
 - **Find new leads, warmest first.** Your agent starts with the people you already talk to and those who engaged with you, then checks the news and posts on your topic, and only then searches LinkedIn by role, company or location. Or bring in a list from an event or Sales Navigator, and get a ready-to-work view.
 - **Mine post comments.** Find posts on a topic or by a competitor, and import the people who commented or reacted, each with a signal saying how.
 - **Score and tag contacts.** Fill an ICP score for every contact, or backfill tags on hundreds of conversations the way your team already uses them.
-- **Keep your CRM in sync.** Combine it with your CRM's MCP to log LinkedIn conversations, or use the native HubSpot integration.
+- **Keep your CRM in sync.** Combine it with your CRM's MCP to match contacts by LinkedIn URL and log LinkedIn conversations, or use the native HubSpot integration.
 
 Your agent also gets work email and mobile phone for the people you talk to, from 20+ providers in a waterfall.
 
