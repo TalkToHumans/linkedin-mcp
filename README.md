@@ -57,6 +57,7 @@ Founders, consultants, sales teams and agencies use it for these jobs, most comm
 - **Organize your inbox.** Set up tags and inboxes that fit your business, then tag hundreds of contacts the way your team already works.
 - **What works in your outbound.** Analyze acceptance rates, reply rates and templates, from connection request to booked meeting, and what to change next.
 - **Score leads by ICP.** Fill an ICP score for every contact, so you can sort them by best fit.
+- **What works in your content.** See which of your posts bring engagement and which bring the people you want to reach, compared with the best and worst posts in your niche.
 - **Find your quick wins.** Ask what you can do today, with little effort, that pays off.
 
 Your agent also gets work email and mobile phone for the people you talk to, from 20+ providers in a waterfall.
